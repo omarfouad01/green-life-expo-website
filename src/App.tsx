@@ -13,7 +13,10 @@ import Contact from "./pages/Contact";
 import AdminLogin from "./pages/admin/Login";
 import AdminDashboard from "./pages/admin/Dashboard";
 import AdminSettings from "./pages/admin/Settings";
+import AdminSEO from "./pages/admin/SEO";
+import AdminLogo from "./pages/admin/Logo";
 import AdminDesign from "./pages/admin/Design";
+import AdminContent from "./pages/admin/Content";
 import AdminPackages from "./pages/admin/Packages";
 import AdminFAQs from "./pages/admin/FAQs";
 import AdminSubmissions from "./pages/admin/Submissions";
@@ -41,8 +44,10 @@ const App = () => (
             <Route path="/admin/login" element={<AdminLogin />} />
             <Route path="/admin/dashboard" element={<AdminDashboard />} />
             <Route path="/admin/settings" element={<AdminSettings />} />
+            <Route path="/admin/seo" element={<AdminSEO />} />
+            <Route path="/admin/logo" element={<AdminLogo />} />
             <Route path="/admin/design" element={<AdminDesign />} />
-            <Route path="/admin/content" element={<AdminDashboard />} />
+            <Route path="/admin/content" element={<AdminContent />} />
             <Route path="/admin/packages" element={<AdminPackages />} />
             <Route path="/admin/faqs" element={<AdminFAQs />} />
             <Route path="/admin/submissions" element={<AdminSubmissions />} />

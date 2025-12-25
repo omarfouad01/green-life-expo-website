@@ -10,7 +10,9 @@ import {
   Mail, 
   LogOut,
   Palette,
-  FileText
+  FileText,
+  Image as ImageIcon,
+  Search
 } from "lucide-react";
 
 interface AdminLayoutProps {
@@ -46,6 +48,8 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
   const menuItems = [
     { icon: LayoutDashboard, label: "Dashboard", path: "/admin/dashboard" },
     { icon: Settings, label: "Site Settings", path: "/admin/settings" },
+    { icon: Search, label: "SEO Settings", path: "/admin/seo" },
+    { icon: ImageIcon, label: "Logo & Branding", path: "/admin/logo" },
     { icon: Palette, label: "Design & Colors", path: "/admin/design" },
     { icon: FileText, label: "Page Content", path: "/admin/content" },
     { icon: Package, label: "Packages", path: "/admin/packages" },
